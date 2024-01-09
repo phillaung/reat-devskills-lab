@@ -1,5 +1,8 @@
-export default function SkillListItem() {
+import './SkillListItem.css'
+export default function SkillListItem({skill}) {
     return (
-        <li>SkillListItem</li>
-    )
+        <li>
+            {skill.name} <span>{skill.level}</span>
+        </li>
+    );
 }
